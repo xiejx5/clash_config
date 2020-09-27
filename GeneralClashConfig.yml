@@ -42,6 +42,3 @@ dns:
     - "*.*.stun.playstation.net"
     - xbox.*.*.microsoft.com
     - "*.*.xboxlive.com"
-Proxy: ~
-Proxy Group: ~
-Rule: ~
