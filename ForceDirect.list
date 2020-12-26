@@ -1,5 +1,5 @@
-PROCESS-NAME,IDMan.exe,DIRECT
-PROCESS-NAME,OneDrive.exe,DIRECT
+PROCESS-NAME,IDMan.exe
+PROCESS-NAME,OneDrive.exe
 DOMAIN-SUFFIX,svc.ms
 DOMAIN,pt.btschool.club
 DOMAIN-SUFFIX,bitwarden.com
