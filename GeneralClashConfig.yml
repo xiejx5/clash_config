@@ -14,9 +14,12 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-    - tls://dns.rubyfish.cn:853
-    - tls://dns.google
-    - tls://1.1.1.1:853
+    - 8.8.8.8
+    - 223.5.5.5
+    - 223.6.6.6
+    - 119.29.29.29
+    - 182.254.116.116
+    - 180.76.76.76
   fake-ip-filter:
     - "*.lan"
     - .ntp.org
@@ -44,6 +47,9 @@ dns:
     - xbox.*.*.microsoft.com
     - "*.*.xboxlive.com"
 #   fallback:
+#     - tls://dns.rubyfish.cn:853
+#     - tls://dns.google
+#     - tls://1.1.1.1:853
 #     - tcp://1.1.1.1:53
 #     - https://1.1.1.1/dns-query
 #   fallback-filter:
