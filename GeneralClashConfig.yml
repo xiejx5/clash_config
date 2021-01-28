@@ -14,6 +14,8 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
+    - 8.8.8.8
+    - 223.5.5.5
     - tls://dns.rubyfish.cn:853
     - tls://1.1.1.1:853
   fake-ip-filter:
