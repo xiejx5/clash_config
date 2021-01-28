@@ -45,7 +45,9 @@ dns:
     - xbox.*.*.microsoft.com
     - "*.*.xboxlive.com"
   fallback:
-    - tcp://1.1.1.1
+    - tls://1.1.1.1:853
+    - tcp://1.1.1.1:53
+    - tls://dns.google
   fallback-filter:
     geoip: true
     ipcidr:
