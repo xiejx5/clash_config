@@ -43,10 +43,10 @@ dns:
     - "*.*.stun.playstation.net"
     - xbox.*.*.microsoft.com
     - "*.*.xboxlive.com"
-  fallback:
-    - tcp://1.1.1.1:53
-    - https://1.1.1.1/dns-query
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
+#   fallback:
+#     - tcp://1.1.1.1:53
+#     - https://1.1.1.1/dns-query
+#   fallback-filter:
+#     geoip: true
+#     ipcidr:
+#       - 240.0.0.0/4
