@@ -14,8 +14,7 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-    - 8.8.8.8
-    - 223.5.5.5
+    - tls://dns.google
     - tls://dns.rubyfish.cn:853
     - tls://1.1.1.1:853
   fake-ip-filter:
@@ -46,7 +45,6 @@ dns:
     - "*.*.xboxlive.com"
   fallback:
     - tcp://1.1.1.1:53
-    - tls://dns.google
     - https://1.1.1.1/dns-query
   fallback-filter:
     geoip: true
