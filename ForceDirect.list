@@ -2,6 +2,7 @@
 # PROCESS-NAME,OneDrive.exe
 DOMAIN,pt.btschool.club
 DOMAIN,api.bing.com
+DOMAIN-SUFFIX,edu.cn
 DOMAIN-SUFFIX,snapdrop.net
 DOMAIN-SUFFIX,svc.ms
 DOMAIN-SUFFIX,bitwarden.com
