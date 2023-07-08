@@ -15,12 +15,12 @@ dns:
   nameserver:
     - tls://8.8.4.4
     - tls://1.0.0.1
+    - tcp://208.67.222.222:443
   proxy-server-nameserver:
-    - https://doh.pub/dns-query
+    - tls://223.5.5.5
   nameserver-policy:
     geosite:cn,private:
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
+      - tls://223.5.5.5
 sniffer:
   enable: true
   sniff:
