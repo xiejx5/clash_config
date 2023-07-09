@@ -17,8 +17,6 @@ dns:
   fake-ip-range: 198.18.0.1/16
   nameserver:
     - tls://223.5.5.5
-    - tls://1.12.12.12
-    - tls://8.8.4.4
     - tls://1.0.0.1
     - tcp://208.67.222.222:443
   fake-ip-filter:
