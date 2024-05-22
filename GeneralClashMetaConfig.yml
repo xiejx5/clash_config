@@ -12,6 +12,7 @@ dns:
   nameserver:
     - tls://223.5.5.5
     - tls://1.0.0.1
+    - system
 sniffer:
   enable: true
   sniff:
