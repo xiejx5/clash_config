@@ -17,6 +17,7 @@ dns:
     "geosite:cn,private":
       - https://223.5.5.5/dns-query
       - system
+      - dhcp://system
 sniffer:
   enable: true
   sniff:
