@@ -4,12 +4,15 @@ mode: rule
 log-level: warning
 ipv6: true
 external-controller: 127.0.0.1:9090
+profile:
+  store-fake-ip: true
 dns:
   enable: true
   listen: ":1053"
   ipv6: true
   prefer-h3: true
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   nameserver:
     - https://223.5.5.5/dns-query
     - https://1.0.0.1/dns-query
@@ -18,12 +21,16 @@ dns:
       - https://223.5.5.5/dns-query
       - system
       - dhcp://system
-sniffer:
-  enable: true
-  sniff:
-    TLS:
-      ports: [443, 8443]
-    HTTP:
-      ports: [80, 8080-8880]
-      override-destination: true
+  fake-ip-filter:
+    - "*.lan"
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - +.stun.*.*.*.*.*
+    - "*.n.n.srv.nintendo.net"
+    - +.stun.playstation.net
+    - xbox.*.*.microsoft.com
+    - "*.*.xboxlive.com"
+    - "*.msftncsi.com"
+    - "*.msftconnecttest.com"
 tcp-concurrent: true
