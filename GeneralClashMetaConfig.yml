@@ -33,4 +33,5 @@ dns:
     - "*.*.xboxlive.com"
     - "*.msftncsi.com"
     - "*.msftconnecttest.com"
+    - +.bgc-jena.mpg.de
 tcp-concurrent: true
