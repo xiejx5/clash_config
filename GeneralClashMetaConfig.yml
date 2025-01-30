@@ -20,9 +20,10 @@ dns:
       - dhcp://system
 sniffer:
   enable: true
+  override-destination: false
   sniff:
     QUIC:
-      ports: [443]
+      ports: [443, 8443]
     TLS:
       ports: [443, 8443]
     HTTP:
