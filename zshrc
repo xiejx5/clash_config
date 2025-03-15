@@ -15,6 +15,8 @@ zstyle ':z4h:bindkey' keyboard  'pc'
 
 # Don't start tmux.
 zstyle ':z4h:' start-tmux       no
+
+# Whether to move prompt to the bottom when zsh starts and on Ctrl+L.
 zstyle ':z4h:' prompt-at-bottom 'no'
 
 # Mark up shell's output with semantic information.
@@ -34,8 +36,8 @@ zstyle ':z4h:direnv:success' notify 'yes'
 
 # Enable ('yes') or disable ('no') automatic teleportation of z4h over
 # SSH when connecting to these hosts.
-zstyle ':z4h:ssh:example-hostname1'   enable 'yes'
-zstyle ':z4h:ssh:*.example-hostname2' enable 'no'
+# zstyle ':z4h:ssh:example-hostname1'   enable 'yes'
+# zstyle ':z4h:ssh:*.example-hostname2' enable 'no'
 # The default value if none of the overrides above match the hostname.
 zstyle ':z4h:ssh:*'                   enable 'no'
 
@@ -82,6 +84,8 @@ z4h bindkey z4h-cd-back    Alt+Left   # cd into the previous directory
 z4h bindkey z4h-cd-forward Alt+Right  # cd into the next directory
 z4h bindkey z4h-cd-up      Alt+Up     # cd into the parent directory
 z4h bindkey z4h-cd-down    Alt+Down   # cd into a child directory
+
+z4h bindkey z4h-clear-screen-hard-top    Ctrl+L  # bottom for prompt-at-bottom
 
 # Autoload functions.
 autoload -Uz zmv
